@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[NOM DU PROFESSEUR] — Professeur d'informatique</title>
+  <meta name="description" content="Site pédagogique de [NOM DU PROFESSEUR], professeur d'informatique au collège [ÉTABLISSEMENT] : cours, exercices et ressources pour les élèves." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="brand">
+        <span class="brand-name">[NOM DU PROFESSEUR]</span>
+        <span class="brand-role">Professeur d'informatique</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="cours.html">Cours</a></li>
+        <li><a href="exercices.html">Exercices</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu-principal">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow-code">// professeur.info();</p>
+          <h1 class="hero-title">Apprendre à programmer, comprendre le numérique, penser autrement.</h1>
+          <p class="hero-text">
+            Je suis <strong>[NOM DU PROFESSEUR]</strong>, professeur d'informatique au collège
+            <strong>[ÉTABLISSEMENT]</strong>. Ce site rassemble mes cours, exercices et ressources
+            pour accompagner mes élèves du collège, du niveau 1ère année au niveau 3ème année.
+          </p>
+          <div class="hero-actions">
+            <a href="cours.html" class="btn btn-primary">Découvrir mes cours</a>
+            <a href="ressources.html" class="btn btn-outline">Voir les ressources</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <span class="hero-stat-value" data-count="12">0</span>
+              <span class="hero-stat-label">cours en ligne</span>
+            </div>
+            <div>
+              <span class="hero-stat-value" data-count="30">0</span>
+              <span class="hero-stat-label">exercices proposés</span>
+            </div>
+            <div>
+              <span class="hero-stat-value" data-count="3">0</span>
+              <span class="hero-stat-label">niveaux couverts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="code-window" role="img" aria-label="Extrait de code illustrant une fonction Python de bienvenue">
+            <div class="code-window-bar">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-window-title">bienvenue.py</span>
+            </div>
+            <pre><code id="typed-code"></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOMAINES ENSEIGNÉS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Domaines enseignés</h2>
+          <p class="section-intro">Un programme progressif, pensé pour construire une véritable culture numérique au collège.</p>
+        </div>
+
+        <div class="domains-grid reveal-stagger">
+          <div class="domain-card reveal">
+            <span class="domain-icon">&lt;/&gt;</span>
+            <h3>Algorithmique</h3>
+            <p>Bases de la logique, variables, boucles et conditions à travers des exercices concrets.</p>
+          </div>
+          <div class="domain-card reveal">
+            <span class="domain-icon">▤</span>
+            <h3>Programmation par blocs</h3>
+            <p>Initiation avec Scratch pour comprendre les concepts avant de passer au texte.</p>
+          </div>
+          <div class="domain-card reveal">
+            <span class="domain-icon">$</span>
+            <h3>Python</h3>
+            <p>Premiers scripts, fonctions et manipulation de données en 3ème année.</p>
+          </div>
+          <div class="domain-card reveal">
+            <span class="domain-icon">◱</span>
+            <h3>Culture numérique</h3>
+            <p>Fonctionnement d'internet, sécurité et usage responsable des outils numériques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DERNIERS COURS ============ -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <h2>Derniers cours</h2>
+            <p class="section-intro">Un aperçu des cours les plus récemment publiés.</p>
+          </div>
+          <a href="cours.html" class="card-link">Voir tous les cours</a>
+        </div>
+
+        <div class="card-grid reveal-stagger">
+          <article class="card card--level-1 reveal">
+            <div class="card-meta">
+              <span class="tag">1ère année</span>
+              <span class="tag">45 min</span>
+            </div>
+            <h3>Introduction à l'algorithmique</h3>
+            <p>Découvrir la notion d'algorithme à travers des exemples de la vie quotidienne.</p>
+            <div class="card-footer">
+              <a href="cours.html#niveau-1" class="card-link">Voir le cours</a>
+            </div>
+          </article>
+
+          <article class="card card--level-2 reveal">
+            <div class="card-meta">
+              <span class="tag">2ème année</span>
+              <span class="tag">50 min</span>
+            </div>
+            <h3>Les boucles avec Scratch</h3>
+            <p>Utiliser les boucles répétitives pour créer une animation simple.</p>
+            <div class="card-footer">
+              <a href="cours.html#niveau-2" class="card-link">Voir le cours</a>
+            </div>
+          </article>
+
+          <article class="card card--level-3 reveal">
+            <div class="card-meta">
+              <span class="tag">3ème année</span>
+              <span class="tag">55 min</span>
+            </div>
+            <h3>Premiers pas en Python</h3>
+            <p>Écrire ses premières instructions et comprendre la syntaxe de base.</p>
+            <div class="card-footer">
+              <a href="cours.html#niveau-3" class="card-link">Voir le cours</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DERNIÈRES RESSOURCES ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <h2>Dernières ressources</h2>
+            <p class="section-intro">Supports de cours, fiches et présentations à télécharger.</p>
+          </div>
+          <a href="ressources.html" class="card-link">Voir toutes les ressources</a>
+        </div>
+
+        <div class="card-grid reveal-stagger">
+          <article class="card resource-card reveal">
+            <div class="card-meta">
+              <span class="file-badge">PDF</span>
+              <span class="tag">1ère année</span>
+            </div>
+            <h3>Fiche — Vocabulaire de l'algorithmique</h3>
+            <p>Un résumé des termes essentiels à connaître pour bien démarrer.</p>
+            <div class="card-footer">
+              <a href="ressources.html" class="card-link">Consulter</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal">
+            <div class="card-meta">
+              <span class="file-badge">PPTX</span>
+              <span class="tag">2ème année</span>
+            </div>
+            <h3>Présentation — Découvrir Scratch</h3>
+            <p>Le support utilisé en classe pour l'introduction à la programmation par blocs.</p>
+            <div class="card-footer">
+              <a href="ressources.html" class="card-link">Consulter</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal">
+            <div class="card-meta">
+              <span class="file-badge">XLSX</span>
+              <span class="tag">3ème année</span>
+            </div>
+            <h3>Tableau de suivi des exercices Python</h3>
+            <p>Un tableau pour suivre sa progression exercice par exercice.</p>
+            <div class="card-footer">
+              <a href="ressources.html" class="card-link">Consulter</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-section reveal">
+      <div class="container">
+        <h2>Une question sur un cours ou un exercice ?</h2>
+        <p>N'hésitez pas à me contacter, je réponds à toutes les questions pédagogiques.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">Me contacter</a>
+          <a href="exercices.html" class="btn btn-outline">Voir les exercices</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand">[NOM DU PROFESSEUR]</span>
+          <p>Professeur d'informatique au collège [ÉTABLISSEMENT]. Ressources pédagogiques pour les élèves de la 1ère à la 3ème année.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="cours.html">Cours</a></li>
+            <li><a href="exercices.html">Exercices</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+            <li><a href="contact.html">Formulaire de contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> [NOM DU PROFESSEUR]. Tous droits réservés.</span>
+        <span>Site conçu avec HTML, CSS &amp; JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

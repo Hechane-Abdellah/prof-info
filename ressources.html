@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ressources — [NOM DU PROFESSEUR]</title>
+  <meta name="description" content="PDF, documents Word, fichiers Excel, présentations et liens utiles pour les cours d'informatique." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="brand">
+        <span class="brand-name">[NOM DU PROFESSEUR]</span>
+        <span class="brand-role">Professeur d'informatique</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="cours.html">Cours</a></li>
+        <li><a href="exercices.html">Exercices</a></li>
+        <li><a href="ressources.html" aria-current="page">Ressources</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu-principal">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb">// ressources.html</p>
+        <h1>Ressources pédagogiques</h1>
+        <p>Documents de cours, fiches et liens utiles. Les fichiers sont à déposer dans <code>assets/documents/</code>.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <form class="filters" aria-label="Filtrer les ressources">
+          <div class="filter-group">
+            <label for="ressources-filter-niveau">Niveau</label>
+            <select id="ressources-filter-niveau">
+              <option value="tous">Tous les niveaux</option>
+              <option value="niveau-1">1ère année</option>
+              <option value="niveau-2">2ème année</option>
+              <option value="niveau-3">3ème année</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="ressources-filter-theme">Type de fichier</label>
+            <select id="ressources-filter-theme">
+              <option value="tous">Tous les types</option>
+              <option value="pdf">PDF</option>
+              <option value="word">Word</option>
+              <option value="excel">Excel</option>
+              <option value="presentation">Présentation</option>
+              <option value="lien">Lien utile</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="card-grid reveal-stagger" id="ressources-list">
+          <article class="card resource-card reveal" data-niveau="niveau-1" data-theme="pdf">
+            <div class="card-meta">
+              <span class="file-badge">PDF</span>
+              <span class="tag">1ère année</span>
+            </div>
+            <h3>Fiche — Vocabulaire de l'algorithmique</h3>
+            <p>Un résumé des termes essentiels à connaître pour bien démarrer l'année.</p>
+            <div class="card-footer">
+              <a href="assets/documents/vocabulaire-algorithmique.pdf" class="card-link">Télécharger</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal" data-niveau="niveau-1" data-theme="word">
+            <div class="card-meta">
+              <span class="file-badge">DOCX</span>
+              <span class="tag">1ère année</span>
+            </div>
+            <h3>Modèle de compte-rendu de TP</h3>
+            <p>Un modèle Word à compléter après chaque séance de travaux pratiques.</p>
+            <div class="card-footer">
+              <a href="assets/documents/modele-compte-rendu.docx" class="card-link">Télécharger</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal" data-niveau="niveau-2" data-theme="presentation">
+            <div class="card-meta">
+              <span class="file-badge">PPTX</span>
+              <span class="tag">2ème année</span>
+            </div>
+            <h3>Présentation — Découvrir Scratch</h3>
+            <p>Le support utilisé en classe pour l'introduction à la programmation par blocs.</p>
+            <div class="card-footer">
+              <a href="assets/documents/decouvrir-scratch.pptx" class="card-link">Télécharger</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal" data-niveau="niveau-2" data-theme="pdf">
+            <div class="card-meta">
+              <span class="file-badge">PDF</span>
+              <span class="tag">2ème année</span>
+            </div>
+            <h3>Fiche — Boucles et conditions</h3>
+            <p>Synthèse illustrée des structures de contrôle vues en cours.</p>
+            <div class="card-footer">
+              <a href="assets/documents/fiche-boucles-conditions.pdf" class="card-link">Télécharger</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal" data-niveau="niveau-3" data-theme="excel">
+            <div class="card-meta">
+              <span class="file-badge">XLSX</span>
+              <span class="tag">3ème année</span>
+            </div>
+            <h3>Tableau de suivi des exercices Python</h3>
+            <p>Un tableau pour suivre sa progression exercice par exercice, à mettre à jour soi-même.</p>
+            <div class="card-footer">
+              <a href="assets/documents/suivi-exercices-python.xlsx" class="card-link">Télécharger</a>
+            </div>
+          </article>
+
+          <article class="card resource-card reveal" data-niveau="niveau-3" data-theme="lien">
+            <div class="card-meta">
+              <span class="file-badge">LIEN</span>
+              <span class="tag">3ème année</span>
+            </div>
+            <h3>Éditeur Python en ligne</h3>
+            <p>Un environnement pour tester son code Python directement depuis le navigateur, sans installation.</p>
+            <div class="card-footer">
+              <a href="#" class="card-link">Ouvrir le lien</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="ressources-empty">
+          Aucune ressource ne correspond à ces filtres pour le moment. Essayez une autre combinaison.
+        </p>
+
+        <div class="form-note" style="margin-top: 2.5rem;">
+          Pour ajouter une nouvelle ressource : placez le fichier dans <code>assets/documents/</code>,
+          puis copiez une carte existante dans <code>ressources.html</code> en adaptant le titre,
+          le type de fichier, le niveau et le lien de téléchargement.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand">[NOM DU PROFESSEUR]</span>
+          <p>Professeur d'informatique au collège [ÉTABLISSEMENT]. Ressources pédagogiques pour les élèves de la 1ère à la 3ème année.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="cours.html">Cours</a></li>
+            <li><a href="exercices.html">Exercices</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+            <li><a href="contact.html">Formulaire de contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> [NOM DU PROFESSEUR]. Tous droits réservés.</span>
+        <span>Site conçu avec HTML, CSS &amp; JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
